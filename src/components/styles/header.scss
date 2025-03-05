@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #121212;
+  padding: 15px 30px;
+  color: white;
+  font-family: "Inter", sans-serif;
+
+  .logo-name {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100px; // Modifica la grandezza del logo
+      height: auto;
+    }
+
+    h1 {
+      margin-left: 10px;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+
+  .header-icons {
+    display: flex;
+    gap: 20px;
+
+    a {
+      color: white;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #5c8b74;
+      }
+    }
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  z-index: 1000;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup button {
+  background: #496e86;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s ease
+}
+
+.popup button:hover {
+  background: #27475c;
+}
+

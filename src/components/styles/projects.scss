@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+.projects-container {
+  min-height: 100vh;
+  background: #121212; // Nero più opaco
+  color: #d6ffec; // Verde chiaro tendente al bianco
+  padding: 100px 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #99ffcc; // Verde chiaro tendente al bianco
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .project-card {
+    background: #191919; // Nero più opaco, leggermente più chiaro dello sfondo
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 10px 30px rgba(153, 255, 204, 0.3); // Verde chiaro tendente al bianco
+    }
+
+    .project-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 20px;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #5c8b74; // Verde chiaro tendente al bianco
+      }
+
+      p {
+        font-size: 1rem;
+        color: #5c8b74; // Verde chiaro più tenue
+        margin-bottom: 15px;
+      }
+
+      .project-link {
+        display: inline-block;
+        padding: 8px 15px;
+        border-radius: 5px;
+        background: #5c8b74; // Verde chiaro tendente al bianco
+        color: #121212; // Nero opaco per contrasto
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background: #458666; // Tonalità più scura del verde chiaro
+        }
+      }
+    }
+  }
+}
