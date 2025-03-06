@@ -22,11 +22,11 @@
   }
 
   @media (max-width: 480px) {
-    padding: 15px 5px; // Minimo per schermi molto piccoli
+    padding: 15px 5px;
   }
 
     @media (max-width: 380px) {
-      padding: 15px 0px; // Minimo per schermi molto piccoli
+      padding: 15px 0px;
   }
 
   .logo-name {
@@ -34,7 +34,7 @@
     align-items: center;
 
     img {
-      width: 100px; // Modifica la grandezza del logo
+      width: 100px;
       height: auto;
     }
 
@@ -56,7 +56,7 @@
       transition: color 0.3s ease;
 
       &:hover {
-        color: #5c8b74;
+        color: #87928d;
       }
     }
   }
@@ -83,7 +83,7 @@
 }
 
 .popup button {
-  background: #496e86;
+  background: #4a4d4b;
   color: white;
   border: none;
   padding: 8px 12px;
@@ -94,6 +94,5 @@
 }
 
 .popup button:hover {
-  background: #27475c;
+  background: #1c3026;
 }
-
