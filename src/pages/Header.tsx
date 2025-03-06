@@ -16,30 +16,24 @@ const Header: React.FC = () => {
       </div>
 
       <div className="header-icons">
-        {/* ICONA MAIL - usa un <a> con onClick per mostrare il popup */}
         <a 
           href="#" 
           onClick={(e) => {
             e.preventDefault();
             setShowPopup(true);
           }}
-          className="icon"
+          className="icon icon-email" // Aggiunta classe per l'email
         >
           <FaEnvelope />
         </a>
-
-        {/* ICONA GITHUB */}
-        <a href="https://github.com/SLuca-24" target="_blank" rel="noopener noreferrer" className="icon">
+        <a href="https://github.com/SLuca-24" target="_blank" rel="noopener noreferrer" className="icon icon-github"> {/* Aggiunta classe per GitHub */}
           <FaGithub />
         </a>
-
-        {/* ICONA LINKEDIN */}
-        <a href="https://www.linkedin.com/in/luca-sannia-376871309/" target="_blank" rel="noopener noreferrer" className="icon">
+        <a href="https://www.linkedin.com/in/luca-sannia-376871309/" target="_blank" rel="noopener noreferrer" className="icon icon-linkedin"> {/* Aggiunta classe per LinkedIn */}
           <FaLinkedin />
         </a>
       </div>
-
-      {/* POPUP */}
+      
       {showPopup && (
         <div className="popup">
           <div className="popup-content">

@@ -8,6 +8,7 @@ import PersonalWeb from "../components/img/personalWeb.png";
 import EthEco from "../components/img/eth-ecosystem.png"
 import dApp from "../components/img/dApps.jpg"
 import donation from "../components/img/solidity.jpg"
+import { FaCloudDownloadAlt } from "react-icons/fa";
 
 const projects = [
   {
