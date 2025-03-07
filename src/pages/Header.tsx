@@ -22,7 +22,7 @@ const Header: React.FC = () => {
             e.preventDefault();
             setShowPopup(true);
           }}
-          className="icon icon-email" // Aggiunta classe per l'email
+          className="icon icon-email"
         >
           <FaEnvelope />
         </a>
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
         <div className="popup">
           <div className="popup-content">
             <p>Email: lucasannia24@gmail.com</p>
-            <button onClick={() => setShowPopup(false)}>Chiudi</button>
+            <button onClick={() => setShowPopup(false)}>Close</button>
           </div>
         </div>
       )}

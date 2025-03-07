@@ -80,8 +80,8 @@ const projects = [
 
 const Projects = () => {
   const handleProjectClick = (event, link, pdf) => {
-    event.preventDefault(); // Previene la navigazione predefinita del link
-    window.open(link, "_blank"); // Apri il link in una nuova scheda
+    event.preventDefault(); 
+    window.open(link, "_blank");
     const a = document.createElement("a");
     a.href = pdf;
     a.download = pdf.split("/").pop();
